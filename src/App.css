@@ -1,33 +1,70 @@
-.App {
-  text-align: center;
+:root {
+  --mainBlack:#232528;
+  --lightWhite:#fff;
+  --mainYellow: #ffa400;
+  --mainBackground: #8F9A90;
+  --mainGreen: #599C11;
+
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body {
+   font-family: "Poppins", sans-serif !important;
+   background: url(./assets/StarsBackground.JPG) repeat !important;
+   background-size: cover;
   }
-  to {
-    transform: rotate(360deg);
-  }
+
+.text-title {
+  font-family:'Rubik';
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+}
+
+.text-black{
+  color: var(--mainBlack);
+}
+
+.text-bright {
+  color: var(--lightWhite);
+}
+
+.btn-green {
+  background: var(--lightWhite) important!;
+  text-transform:capitalize;
+  font-size: 0.8rem !important;
+  color:var(--mainGreen);
+  border-radius: 1.2 !important;
+  border:0.1rem solid var(--mainBlack) !important;
+}
+
+.btn-green:hover{
+  bacground: var(--lightWhite) !important;
+  color:var(--lightWhite) !important;
+}
+
+
+.btn-white {
+  background: var(--lightWhite) !important;
+  text-transform:capitalize;
+  font-size: 0.8rem !important;
+  color:var(--mainGreen);
+  border-radius: 1.2 !important;
+  border:0.1rem solid var(--mainGreen) !important;
+}
+
+.cart-icon{
+  cursor: pointer;
+  font-size: 1.2rem;
+  color:var(--mainYellow);
+}
+
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.backgroundLite {
+ 
+  background: var(--lightWhite) !important;
+
 }
